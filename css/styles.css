@@ -3,6 +3,25 @@ body {
     color: #434455;
     background-color: #FFFFFF;
     }
+    /**Perezavantagennya ctuliv-----*/
+    p, h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .container{
+        width: 100%;
+        max-width: 1158px;
+        /* padding-left: 15px; */
+        /* padding-right: 15px; */
+        margin: 0 auto;
+        outline: 2px solid red;
+    }
+    
 
     :root {
     --title-color: #2E2F42;
@@ -36,8 +55,20 @@ body {
     }
 
     /**------INDEX-----Header------------*/
-    .header {}
-    .header-navigation {}
+    .header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .header-navigation {
+        display: flex;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+
+
     .header-logo {
         font-family: 'Raleway', sans-serif;
         font-style: normal;
@@ -55,7 +86,11 @@ body {
     .span-header {
         color: var(--title-color);
     }    
-    .header-menu {}
+    .header-menu {
+        display: flex;
+        gap: 40px;
+        margin-left: 76px;
+    }
     .header-menu-item {
         font-weight: 500;
         font-size: 16px;
@@ -80,6 +115,9 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--text-color);
+        display: flex;
+        margin-left: 332px;
+        gap: 40px;
     }
     .address-item {}
     .address-link {
