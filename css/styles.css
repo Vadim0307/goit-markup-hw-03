@@ -36,7 +36,7 @@ body {
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
-        /* outline: 2px solid red; */
+        outline: 2px solid red;
     }
     
     :root {
@@ -46,6 +46,7 @@ body {
     --link-color: #404bbf;
     --white-color: #FFFFFF;
     --backgr-color: #F4F4FD;
+    --button-color: #e7e9fc;
     }
     
     /**-------Bez krapok v spiskax-----*/
@@ -77,16 +78,17 @@ body {
     .header {
         padding-top: 24px;
         padding-bottom: 24px;
+        border-bottom: 1px solid #e7e9fc;
     }
     .header-navigation {
         display: flex;
+        align-items: center; 
     }
     
     .header-container {
         display: flex;
         align-items: center;
     }
-
 
     .header-logo {
         font-family: 'Raleway', sans-serif;
@@ -98,10 +100,9 @@ body {
         color: var(--logo-color);
         text-transform: uppercase;
         text-decoration: none;
+        margin-right: 76px;
     }
-    .header-logo {
-        color: var(--logo-color);
-    }
+    
     .span-header {
         color: var(--title-color);
     }    
@@ -117,6 +118,7 @@ body {
         letter-spacing: 0.02em;
         color: var(--title-color);
         text-decoration: none;
+        padding: 24px 0;
     }
     .header-menu-link {
         color:var(--title-color);
@@ -128,6 +130,7 @@ body {
 
     .header-address {
         font-style: normal;
+        margin-left: 242px;
     }
     .header-address-menu {
         font-size: 16px;
@@ -135,12 +138,12 @@ body {
         letter-spacing: 0.02em;
         color: var(--text-color);
         display: flex;
-        margin-left: 332px;
         gap: 40px;
     }
     .address-item {}
     .address-link {
         color: var(--text-color);
+        margin-right: 0;
     }
     .address-link:hover, .address-link:focus {
         color: var(--link-color);
@@ -214,7 +217,7 @@ body {
         padding-right: 15px;
     }
     .directions-item {
-        width: calc((100% - 24px * 3) / 4);
+        width: calc((100% - 72px) / 4);
     }
     .directions-subtitle {
         margin-bottom: 8px;
@@ -237,8 +240,7 @@ body {
         color: var(--title-color);
         text-align: center;
         margin-bottom: 72px;
-        max-width: 323px;
-        margin: 0 auto;
+        /* max-width: 323px; */
     }
     .doing-menu {
         display: flex;
@@ -247,12 +249,14 @@ body {
         padding-right: 15px;
     }
     .doing-item {
-        width: calc((100% - 24px * 2) / 3);
+        width: calc((100% - 48px) / 3);
     }
     
     /**-------INDEX---Section 4---------*/
     .team {
         background-color: var(--backgr-color);
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     .team-container{
         width: 1158px;
@@ -265,7 +269,6 @@ body {
         text-transform: capitalize;
         color: var(--title-color);
         text-align: center;
-        padding-top: 120px;
         margin-bottom: 72px;
     }
     .team-menu {
@@ -276,26 +279,18 @@ body {
     }
     .team-item {
         background-color: var(--white-color);
-        width: calc((100% - 24px * 3) / 4);
+        width: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
     }
     .team-subtitle {
-        padding-top: 32px;
+        margin-bottom: 8px;
     }
-    .team-subtext {
-        padding-top: 8px;
-    }
-    .mark {
+    .team-subtext {}
+    .osoba {
         text-align: center;
+        padding: 32px 16px;
     }
-    .tom {
-        text-align: center;
-    }
-    .camila {
-        text-align: center;
-    }
-    .daniel {
-        text-align: center;
-    }
+    
 
     /**-------INDEX---Footer---------*/
     .footer {
@@ -319,9 +314,8 @@ body {
         text-transform: uppercase;
         color: var(--logo-color);
         text-decoration: none;
-    }
-    .footer-logo {
-        color: var(--logo-color);
+        display: inline-block; 
+        margin-bottom: 16px; 
     }
     .footer-text {
         font-size: 16px;
@@ -329,77 +323,25 @@ body {
         letter-spacing: 0.02em;
         color: var(--backgr-color);
         max-width: 264px;
-        margin-top: 16px;
     }
     .span-footer {
         color: var(--backgr-color);
     }
-    .footer-container {
-        /* margin-left: 156px; */
-    }
+   
 
     /**---PORTFOLIO------Header---------*/
     
-    .p-header {
-        padding-bottom: 96px;
-    }
-    .p-header-navigation {
-        display: flex;
-    }
-    .p-header-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .p-header-menu {
-        display: flex;
-        gap: 40px;
-        margin-left: 76px;
-    }
-    .p-header-menu-item {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--title-color);
-        text-decoration: none;
-    }
-    .p-header-menu-link {
-        color: var(--title-color);
-    }
-    .p-header-menu-link:hover, .p-header-menu-link:focus {
-        color: var(--link-color);
-    }
-    .p-header-address {
-        font-style: normal;
-    }
-    .p-header-address-menu {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        font-style: normal;
-        display: flex;
-        margin-left: 332px;
-        gap: 40px;
-    }
-    .p-address-item {
-        color: var(--text-color);
-    }
-    .p-address-link {
-        color: var(--text-color);
-    }
-    .p-address-link:hover, .p-address-link:focus {
-        color: var(--link-color);
-    }
-    
+        
     /**---PORTFOLIO------Block1------------*/
    
+        
     .block-one-four {
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 120px; 
     }
 
     .block-one-container {
-    width: 1158px;
+        width: 1158px;
     }
 
     .button-menu {
@@ -409,7 +351,9 @@ body {
         margin-bottom: 72px;
         gap: 24px;
     }
-    .button-menu-item {}
+    .button-menu-item {
+        padding: 12px 24px;
+    }
 
     .button-menu-general {
         font-family: 'Roboto', sans-serif;
