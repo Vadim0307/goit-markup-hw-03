@@ -218,7 +218,7 @@ body {
         padding-right: 15px;
     }
     .directions-item {
-        flex-basis: calc((100% - 3 * 24px) / 4);
+        flex-basis: calc((100% - 3*24px) / 4);
     }
     .directions-subtitle {
         margin-bottom: 8px;
@@ -386,7 +386,7 @@ body {
         border-radius: 4px;
         padding: 12px 24px;
     } */
-    
+
     .button-menu-general:hover, .button-menu-general:focus {
         color:var(--white-color);
         background-color: var(--link-color);
