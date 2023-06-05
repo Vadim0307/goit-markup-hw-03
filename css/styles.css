@@ -218,8 +218,9 @@ body {
         padding-right: 15px;
     }
     .directions-item {
-        flex-basis: calc((100% - 72px) / 4);
+        width: calc((100% - 72px) / 4);
     }
+   
     .directions-subtitle {
         margin-bottom: 8px;
     }
