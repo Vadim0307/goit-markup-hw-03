@@ -218,6 +218,7 @@ body {
         padding-right: 15px;
     }
     .directions-item {
+        padding-left: 0;
         width: calc((100% - 72px) / 4);
     }
    
