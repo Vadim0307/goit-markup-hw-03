@@ -214,12 +214,11 @@ body {
     .directions-menu {
         display: flex;
         gap: 24px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
+        /* padding-left: 15px;
+        padding-right: 15px; */
     }
     .directions-item {
-    margin: 0;
-    padding-left: 0;
     flex-basis: calc((100% - 72px) / 4);
     }
    
